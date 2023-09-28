@@ -1,0 +1,13 @@
+.contact {
+  text-align: center;
+}
+.form {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input {
+  width: 30%;
+  margin: auto;
+}
