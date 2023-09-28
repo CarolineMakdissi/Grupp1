@@ -1,13 +1,30 @@
-.contact {
+.contact > p {
   text-align: center;
+  font-size: larger;
+  padding: 5%;
 }
-.form {
-  display: inline-block;
+label,
+input {
+  margin: auto;
+}
+.form,
+.input {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 10px;
+  font-size: medium;
+  min-width: 300px;
 }
-.input {
-  width: 30%;
-  margin: auto;
+
+input[type="submit"] {
+  display: block;
+  width: 31%;
+  height: 2em;
+  margin: 1.5em auto;
+  font-size: 1.1rem;
+  min-width: 200px;
+}
+img {
+  width: 10%;
+  height: 10%;
 }
