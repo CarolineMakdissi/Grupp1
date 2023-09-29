@@ -6,7 +6,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <nav></nav>
   <body>
+    <div class="bgcontainer">
+      <div class="contentcontainer">
+        <h1 class="title">Välkommen till Eco Care</h1>
+      </div>
+    </div>
+
+    <div class="membership">
+      <img src="img/bild1.webp" />
+      <div class="medbershipcontainer">
+        <h2>UPPLEV MENINGSFULLA STUNDER TILLSAMMANS</h2>
+        <p>
+          Varje köp du gör berättigar till exklusiva gåvor, fler
+          medlemsförmåner, upplevelser och mer. Vi börjar med en tackgåva andra
+          gången du gör ett köp
+        </p>
+      </div>
+      <button type="button">BLI MEDLEM</button>
+    </div>
+    <div class="membercontainer">
+      <p>För att bli medlem var god fyll i följande:</p>
+      <form class="memberform">
+        <label
+          >Förnamn:
+          <input class="memberinput" type="text" id="memberfirstname" required
+        /></label>
+        <label
+          >Efternamn:
+          <input class="memberinput" type="text" id="memberlastname" required />
+        </label>
+        <label>
+          E-mail:
+          <input class="memberinput" type="email" id="memberemail" required
+        /></label>
+        <label>
+          Skapa ny lösenord:
+          <input class="memberinput" id="new-password" type="password" required
+        /></label>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
     <div class="contact">
       <p>För att kontakta oss var god fyll i följande:</p>
       <form class="form">
@@ -29,13 +71,9 @@
             placeholder="Skriv här.."
             required
           ></textarea>
-          <input class="submit" type="submit" value="Submit" />
+          <input type="submit" value="Submit" />
         </label>
       </form>
-    </div>
-    <div class="membership">
-      <img src="img/bild1.webp" />
-      <p>UPPLEV MENINGSFULLA STUNDER TILLSAMMANS</p>
     </div>
   </body>
 </html>
