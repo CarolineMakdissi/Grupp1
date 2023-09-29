@@ -1,2 +1,51 @@
-/***Global styles**/
+/***FIRSTPAGE GLOBAL STYLES**/
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); /*Import url css google font style to the headlines*/
 
+h1, h2, .col-lg, .footer{
+font-family:"Kalam" , sans-serif;}
+
+
+.col-lg{
+background-color: #EDE1D2;
+}
+
+body{
+height: 100vh;
+margin: 0;
+}
+.sectionmargin{
+margin-top:50px;
+}
+    .picture-container{
+    background-color:#806944;
+    }
+
+    
+    .row{
+    display:flex;
+    margin-inline: 2px;
+    color:#806944;
+    }
+    
+    
+    .navbar-toggler, .container-fluid{
+    background-color: #EDE1D2;
+    }
+    
+    .nav-item{
+    background-color: #EDE1D2;
+    color:black;
+    }
+
+    .stylefooter{
+    background-color:#987e55;
+    color:white;
+    }
+    .picture1{
+    height: 100%;
+    width: 100%;
+    }
+    /****MEDIA QUIER
+    /*Css style, style changes when screen gets bigger*/
+
+    

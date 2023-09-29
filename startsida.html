@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -11,53 +12,108 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Hemsida</title>
+    <link rel="stylesheet" href="./startsida.css" />
+    <!--The name of our webbshop-->
+    <title>Ritulas Eco Care</title>
   </head>
 
-
   <body>
-    <div class="firstpage-container"> 
-      <!---Menu, navbar bootstrap-->
-      
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <!--<a class="navbar-brand" href="#">Navbar</a>-->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Startsida</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Om oss</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kontakt</a>
-              </li>
-              </li>
-            </ul>
+    <!--Header-->
+    <section class="firstpage-main-container">
+      <header class="header-section">
+        <!--Menu, Navbar boostrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <!---<a class="navbar-brand" href="#">Navbar</a>  - Not necessary for our style-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Startsida</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Om oss</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Produktsida</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kontakt</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          
+        </nav>
+        <!--Menu ending-->
+        <img
+          class="picture1"
+          src="./images/skincarecream.jpg"
+          alt="A picture of skincare"
+        />
+        <!--Introduction to our products-->
+        <div class="sectionmargin">
+          <h1>Välkommen till Ritals Eco Care</h1>
+          <p>
+            Hudvård för varje del på kroppen, ta hand om din kropp med produkter
+            framgjorda med eco vänliga ämmnen. Här på Eco Care finns det
+            garantier att du kommer att älska din hud med gott samvete.
+          </p>
         </div>
-      </nav>
-      
-      <!--Header-->
-      <img src="" class="img-fluid" />
-      <header class=""></header>
-      <h1>Hemsida</h1>
-    </div>
+      </header>
+    </section>
+
+    <!--Picture section-->
+    <section class="picture-container">
+      <h2>I rampljuset....</h2>
+      <div class="row">
+        <div class="col-lg">
+          <h3>Ansiktskräm</h3>
+          <p>
+            Rituals erbjuder dagkräm för alla hudtyper med speciel ingrediens av
+            aloe vera Kombinera gärna den med vår Bodycream och Bodymist - läs
+            gärna mer på vår produktsida
+          </p>
+          <img src="./images/daycream2.jpg" class="img-fluid" />
+        </div>
+        <div class="col-lg">
+          <h3>Kroppskräm</h3>
+          <p>
+            I Rituals Eco Care har vi en underbar kroppskräm med lugnande effekt
+            - läs gärna mer på vår produktsida
+          </p>
+          <img src="./images/skincream.webp" class="img-fluid" />
+        </div>
+        <div class="col-lg">
+          <h3>Body mist</h3>
+          <p>
+            Du kan även kombinera ihop med din Dagkräm och Bodycream vår härliga
+            Bodymist - läs gärna mer om den på vår produktsida
+          </p>
+          <img src="./images/bodymist.jpg" class="img-fluid" />
+        </div>
+      </div>
+    </section>
+
+    <!--Copyright Footer-->
+    <footer class="footer">
+      <div class="footer-container stylefooter">
+        Copyright &copy; 2023, Eco Care <br />
+        Välkommen åter!
+      </div>
+    </footer>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
