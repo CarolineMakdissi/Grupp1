@@ -61,8 +61,7 @@ input,
 .memberlabel {
   margin: auto;
 }
-.memberform,
-.memberinput,
+
 .form,
 .input {
   display: flex;
@@ -71,12 +70,12 @@ input,
   font-size: medium;
   min-width: 300px;
 }
-.input,
-.memberinput {
+.input {
   background-color: rgba(182, 175, 170, 0.749);
   border-color: rgba(64, 61, 58, 0.749);
 }
-input[type="submit"] {
+
+.submit {
   display: block;
   width: 31%;
   height: 2em;
