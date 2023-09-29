@@ -1,23 +1,26 @@
 /***FIRSTPAGE GLOBAL STYLES**/
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); /*Import url css google font style to the headlines*/
 
-h1, h2, .col-lg, .footer{
-font-family:"Kalam" , sans-serif;}
+h1, h2,p, .col-lg, .footer{
+font-family:"Kalam" , sans-serif;
+text-align: center;
+}
 
-
+p {
+text-align: center;
+}
 .col-lg{
 background-color: #EDE1D2;
 }
 
-body{
-height: 100vh;
-margin: 0;
+.marginsection-style {
+text-align-last: center;
 }
 .sectionmargin{
 margin-top:50px;
 }
     .picture-container{
-    background-color:#806944;
+    background-color: white;
     }
 
     
@@ -34,17 +37,21 @@ margin-top:50px;
     
     .nav-item{
     background-color: #EDE1D2;
-    color:black;
+    color: white;
     }
 
     .stylefooter{
     background-color:#987e55;
     color:white;
+    text-align: center;
+    padding-top:20px;
+    height:100px;
     }
     .picture1{
     height: 100%;
     width: 100%;
     }
+
     /****MEDIA QUIER
     /*Css style, style changes when screen gets bigger*/
 
