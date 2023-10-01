@@ -1,111 +1,174 @@
-
 /******GLOBAL STYLE- FIRSTPAGE*****/
-
-
-
-
+/*Import url css google font style to the headlines- menu, paragraph and h1/h2*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam&display=swap");
 
 /****HEADER - FIRSTPAGE CONTAINER****/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    font-family: "Poppins", sans-serif;
-    --color1: black;
-    --color2: #EDE1D2;
+  font-family: "Kalam", sans-serif;
+  --color1: White;
+  --color2: #6a6f4c;
+  background-color: #ede1d2;
 }
 
 /*Menu*/
 .nav-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    position: relative;
-    background-color: var(--color2);
-    padding: 12px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: var(--color2);
+  padding: 12px 20px;
 }
-.logo img {width: 60px;}
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
+.logo img {
+  width: 60px;
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  padding-left: 30px;
+}
 .menu li a {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color1);
-    text-align: center;
-    transition: 0.15s ease-in-out;
-    position: relative;
-    text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color1);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
 }
 .menu li a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--color1);
-    transition: 0.15s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ede1d2;
+  transition: 0.15s ease-in-out;
 }
-.menu li a:hover:after {width: 100%;}
-.open-menu , .close-menu {
-    position: absolute;
-    color: var(--color1);
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: none;
+.menu li a:hover:after {
+  width: 100%;
+}
+.open-menu,
+.close-menu {
+  position: absolute;
+  color: var(--color1);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
 }
 .open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 .close-menu {
-    top: 20px;
-    right: 20px;
+  top: 20px;
+  right: 20px;
 }
-#check {display: none;}
-
-.picture1fp{
-    display: block;
-    width: 700px;
-    height:500px;
-    margin-left:22%;
+#check {
+  display: none;
 }
 
+.picture1fp {
+  display: block;
+  width: 700px;
+  height: 500px;
+  margin-left: 22%;
+}
 
+
+/*Firstpage-main-container*/
+h1 {
+  text-align: center;
+  font-family: "Kalam", sans-serif;
+}
+.quotes{
+text-align: center;
+font-family: "Kalam", sans-serif;
+}
+
+.picture-section{
+background-color: white;
+height:500px;
+width: 50%;
+display:flex;
+text-align: center;
+}
+
+.row{
+    display:flex;
+    margin-inline: 2px;
+    color:#806944;
+    background-color: white;
+    }
+
+    .picture3fp{
+    width:50px;
+    height: 50px;
+    }
 /******MEDIA QUEIRES- FIRSTPAGE*******/
 /* CSS style mobile, style changes when the screen gets smaller*/
-@media(max-width: 610px){
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: var(--color2);
-        transition: all 0.2s ease-in-out;
-    }
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
+@media (max-width: 610px) {
 
-   .picture1fp{
+  /*Firstpage-container, header*/
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--color2);
+    transition: all 0.2s ease-in-out;
+  }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+/*Firstpage-main-container*/
+  .picture1fp {
     display: block;
     width: 200px;
     height: 150px;
-    margin-left: 22%;
-   }
-}
-/*CSS style tablet , style changes when the screen gets bigger*/
-@media (min-width: 768px) and (max-width: 1024px) {
+    margin-right:22%;
+  }
 
+  .picture5fp{
+    width: 300px;
+    height: 150px;
+    margin-left: 10%;
+    margin-top:5px;
+  }
+  h1  {
+    font-size: 20px;
+
+  }
+ .quotes{
+ font-size:12px;
+  }
+}
+ /*CSS style tablet and desktops, style changes when the screen gets bigger*/
+ @media (min-width: 768px) and (max-width: 1024px) {
 }
