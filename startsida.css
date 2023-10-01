@@ -1,0 +1,43 @@
+
+/****GLOBAL STYLES, FIRSTPAGE****/
+* {
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); /*Import url css google font style to the headings of the menu*/
+
+body{
+font-family:"kalam" , sans-serif;
+--color1: White;
+--color2: black;
+}
+
+.nav-bar {
+width: 100%;
+display:flex;
+justify-content: space-between;
+align-items: center; 
+list-style:none;
+position: relative;
+background-color: var(--color2);
+padding: 12px 2px;
+}
+
+.menu {
+display:flex;
+}
+
+.menu li {
+padding-left:30px; 
+}
+
+.menu li a {
+display:inline-block;
+text-decoration: none;
+color:var(--color1);
+text-align:center;
+transition: 0.15s ease-in-out;
+position:relative;
+text-transform:uppercase;
+}
