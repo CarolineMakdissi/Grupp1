@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Defining viewport settings, helps with responsive layout-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Connect html and css file-->
     <link rel="stylesheet" href="startsida.css" />
+    <!--Add font awesome to the menu-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -13,25 +16,59 @@
     />
     <title>Rituals Eco Care org</title>
   </head>
+
+  <!--Body - information to the user-->
   <body>
-    <header>
-      <nav>
-        <ul class="nav-bar">
-          <li class="logo">
-            <a href="#"><img src="" alt="logo" /></a>
-          </li>
-          <input type="checkbox" id="check" />
-          <span class="menu">
-            <li><a href="#">Startsida</a></li>
-            <li><a href="#">Om oss</a></li>
-            <li><a href="#">Produktsida</a></li>
-            <li><a href="#">Kontakt</a></li>
+    <!---HEADER-->
+    <div class="firstpage-container">
+      <header class="header">
+        
+        <!--Navbar- responsive hamburger menu-->
+        <nav>
+          <ul class="nav-bar">
+            <li class="logo">
+              <a href="#"
+                ><img
+                  src="./images/ritulas.webp"
+                  alt="A picture of ritual logo"
+              /></a>
+            </li>
+            <input type="checkbox" id="check" />
+            <span class="menu">
+              <li><a href="#">Startsida</a></li>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">Produktsida</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#"></a></li>
+              <label for="check" class="close-menu"
+                ><i class="fas fa-times"></i
+              ></label>
+            </span>
             <label for="check" class="open-menu"
               ><i class="fas fa-bars"></i
             ></label>
-          </span>
-        </ul>
-      </nav>
-    </header>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+      <main class="firstpage-main-container">
+      <div class="main-section"> <!---lägg bild och text här --> 
+        <img class="picture1fp" src="./images/green.jpg" alt="A picture of skincare">
+        <h1>Välkomen!</h1> 
+      </main>
+     </div> 
+
+
+     <div class="picture-section"></div>
+      
+      <!--Copyright Footer
+      <footer class="footer">
+        <div class="footer-container stylefooter">
+          Copyright &copy; 2023, Eco Care <br />
+          Välkommen åter!
+        </div>
+      </footer>
+    </div> -->
   </body>
 </html>
