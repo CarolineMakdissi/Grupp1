@@ -1,67 +1,130 @@
-/*mobiler*/
-
-@media screen and (max-width: 600px){
-#produkter{
+/*Desktop*/
+@media screen and (max-width: 1900px) {
+  #produkter {
+    display: grid;
+    width: 80%;
+    height: fit-content;
+    grid-template-rows: repeat(2, 500px);
+    column-gap: 2vh;
+    row-gap: 2vh;
+    grid-template-areas:
+      "a b"
+      "c d";
+  }
+  #bild {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    background-color: #6a6f4c;
+  }
+  .desc {
+    font-weight: 200;
+    font-size: 1.2rem;
+  }
+  .produkt {
+    width: 80%;
+  }
+}
+/*Tablets*/
+@media screen and (max-width: 900px) {
+  .produkt {
+    width: 100%;
+  }
+}
+/*Mobiler*/
+@media screen and (max-width: 600px) {
+  #produkter {
     padding: 1px;
     display: grid;
-    height: 1000px;
+    height: fit-content;
     grid-template-columns: 50% 50%;
-    column-gap: 1vh; row-gap: 1vh;
-    grid-template-rows: repeat(3, 220px);
+    column-gap: 1vh;
+    row-gap: 1vh;
+    grid-template-rows: repeat(2, 35vh);
     grid-template-areas:
-    "a b"
-    "c d"
-    "e f";
-}   
-#bild{
+      "a b"
+      "c d";
+  }
+  .produkt {
     width: 100%;
-    height: 70% ;
-    overflow: hidden;
-}
-#produkt-1{
-    grid-area:a;
+  }
+  #bild {
+    width: 100%;
+    height: 70%;
+  }
+  #produkt-1 {
+    grid-area: a;
     overflow: hidden;
     width: 100%;
-}
-#produkt-2{
+  }
+  #produkt-2 {
     grid-area: b;
     overflow: hidden;
     width: 100%;
-}
-#produkt-3{
-    grid-area:c;
+  }
+  #produkt-3 {
+    grid-area: c;
     overflow: hidden;
     width: 100%;
-}
-#produkt-4{
+  }
+  #produkt-4 {
     grid-area: d;
     overflow: hidden;
     width: 100%;
-}
-#produktInfo{
-    background-color: aqua;
-    overflow: hidden;
-    width: fit-content;
-}
-*{
+  }
+  .produktInfo {
+    background-color: rgb(255, 255, 255);
+    font-family: "Crimson Text", serif;
+    width: 100%;
+    height: 100%;
+  }
+  * {
     border: red 0px solid;
-}
-.br{
-    display: block ;
-}
-#footer{
-    width: 100%; height: 40vh;
+  }
+  .br {
+    display: block;
+  }
+  #footer {
+    width: 100%;
+    height: 40vh;
     background-color: chartreuse;
+  }
+  .desc {
+    font-weight: 200;
+    font-size: 0.8rem;
+  }
 }
+.body {
+  overflow-x: hidden;
+  background-color: #ede1d2;
 }
-.body{
-    overflow-x: hidden;
+#main {
+  overflow: hidden;
+  background-color: #ede1d2;
 }
-#main{
-    overflow: hidden;
-    background-color: brown;
+#pris {
+  font-weight: light;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
 }
-#pris{
-    font-weight: light;
-    ;
+header {
+  background-image: url(bilder/headerBG.jpg);
+  height: 20vh;
+}
+.title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+.titleWrap {
+  width: fit-content;
+  background-color: #6a6f4cb0;
+  color: #000000;
+}
+h1,
+h2 {
+  font-family: "Crimson Text", serif;
 }
