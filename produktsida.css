@@ -1,0 +1,67 @@
+/*mobiler*/
+
+@media screen and (max-width: 600px){
+#produkter{
+    padding: 1px;
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 50% 50%;
+    column-gap: 1vh; row-gap: 1vh;
+    grid-template-rows: repeat(3, 220px);
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+}   
+#bild{
+    width: 100%;
+    height: 70% ;
+    overflow: hidden;
+}
+#produkt-1{
+    grid-area:a;
+    overflow: hidden;
+    width: 100%;
+}
+#produkt-2{
+    grid-area: b;
+    overflow: hidden;
+    width: 100%;
+}
+#produkt-3{
+    grid-area:c;
+    overflow: hidden;
+    width: 100%;
+}
+#produkt-4{
+    grid-area: d;
+    overflow: hidden;
+    width: 100%;
+}
+#produktInfo{
+    background-color: aqua;
+    overflow: hidden;
+    width: fit-content;
+}
+*{
+    border: red 0px solid;
+}
+.br{
+    display: block ;
+}
+#footer{
+    width: 100%; height: 40vh;
+    background-color: chartreuse;
+}
+}
+.body{
+    overflow-x: hidden;
+}
+#main{
+    overflow: hidden;
+    background-color: brown;
+}
+#pris{
+    font-weight: light;
+    ;
+}
