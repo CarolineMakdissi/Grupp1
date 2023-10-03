@@ -7,6 +7,15 @@
 body{
     background-color: #EDE1D2;
 }
+.header{
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.header-img{
+    width: 100px;
+    height: 200px;
+}
 .heading{
     width: 90%;
     display: flex;
@@ -22,6 +31,7 @@ body{
     font-size: 50px;
     color-scheme: #000;
     margin-bottom: 25px;
+    margin-top: 20px;
     position: relative;
 }
 .heading h1::after{
@@ -51,20 +61,17 @@ body{
     flex-wrap: wrap;  
     margin-top: -50px; 
 }
-.about-image{
+.about-image {
     flex: 1;
     margin-right: 40px;
     overflow: hidden;
-    
 }
-.about-image img{
+ .about-image img {
     width: 207px;
     height: 370px;
     transition: 0.5s ease;
-}
-.about content{
-    flex: 1;
-}
+    }
+
 .about-content h2{
     font-size: 23px;
     margin-bottom: 15px;
