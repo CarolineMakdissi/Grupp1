@@ -66,10 +66,10 @@
     </section>
 
     <main
-      class="col-12 text-center mx-auto flex-row align-content-center"
+      class="col-12 text-center mx-auto"
       id="main"
     >
-      <div class="mx-auto mb-4" id="produkter">
+      <div class="mx-auto mb-4 row justify-content-center" id="produkter">
         <div class="shadow rounded flex-column produkt mx-auto" id="produkt-1">
           <img class="rounded-top" id="bild" src="bilder/jingBodycream.webp" />
           <div class="mx-auto produktInfo">
@@ -107,16 +107,43 @@
             <h2>Handtvål</h2>
             <p class="desc">
               Skonsam handtvål.<br />
-              <span id="pris"> 129kr</span>
+              <span id="pris">129kr</span>
+            </p>
+          </div>
+        </div>
+        <div class="shadow rounded flex-column produkt mx-auto" id="produkt-5">
+          <img class="rounded-top" id="bild" src="bilder/handbalm.webp" />
+          <div class="mx-auto produktInfo">
+            <h2>Handbalm</h2>
+            <p class="desc">
+              Mjuka händer.<br />
+              <span id="pris">100kr</span>
+            </p>
+          </div>
+        </div>
+        <div class="shadow rounded flex-column produkt mx-auto" id="produkt-6">
+          <img class="rounded-top" id="bild" src="bilder/handmask.webp" />
+          <div class="mx-auto produktInfo">
+            <h2>Handmask</h2>
+            <p class="desc">
+              Vårda dina händer.<br />
+              <span id="pris">119kr</span>
             </p>
           </div>
         </div>
       </div>
-      <p class="px-4">
+      <div class="mx-auto col-8 text-center d-flex mb-4" id="jingInfo">
+      <div>  <img id="jingBild" src="bilder/Jing.jpg" alt="Bild på en Jing skiva."> </div>
+      <p class="m-auto"  id="jingText">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum tenetur
         fugit delectus iste corporis natus, temporibus laboriosam sed debitis
         animi illo deserunt ex quod cum laudantium vitae maxime cumque rem?
+        <br>
+        <button type="button" class="btn btn-outline-dark my-3">
+          Utforska
+        </button>
       </p>
+    </div>
     </main>
 
     <footer id="footer"></footer>
