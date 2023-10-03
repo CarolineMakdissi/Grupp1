@@ -7,7 +7,7 @@
 }
 body {
   font-family: Apple Chancery, cursive;
-  --color1: White;
+  --color1: White; /* Use --color to find the colour easy*/
   --color2: #6a6f4c;
   background-color: #ede1d2;
 }
@@ -86,6 +86,7 @@ body {
 h1 {
   text-align: center;
   font-family: Apple Chancery, cursive;
+  text-shadow: 2px 2px 4px grey; /*Adding shadow behind the text*/
 }
 .quotes {
   text-align: center;
@@ -93,7 +94,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-/*LAST-CONTAINER*/
+/*******LAST-CONTAINER******/
 .row {
   display: flex;
   margin-inline: 2px;
@@ -116,8 +117,10 @@ h1 {
 }
 
 
-/* MAIN-FOOTER-CONTAINER - Global style*/
+/******MAIN-FOOTER-CONTAINER - Global style*****/
 .main-footer-container {
+  display: flex;
+  justify-content: center;
   font-family: Apple Chancery, cursive;
   background-color: #6a6f4c;
   color: white;
@@ -129,8 +132,8 @@ h1 {
 }
 
 /******MEDIA QUEIRES- FIRSTPAGE*******/
-/* CSS style mobile, style changes when the screen gets smaller*/
-@media (max-width: 610px) {
+/* CSS style mobile, more style that changes when the screen gets smaller*/
+@media (max-width:610px)  {
   /*Firstpage-container, header*/
   .menu {
     flex-direction: column;
@@ -171,7 +174,7 @@ h1 {
     height: 150px;
     margin-right: 22%;
   }
-  
+
   .quotes {
     font-size: 12px;
   }
@@ -200,7 +203,7 @@ h1 {
 
   h1 {
     font-size: 20px;
-
+    
     /*Global media queries style */
   }
   h2 {
