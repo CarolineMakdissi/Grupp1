@@ -1,5 +1,6 @@
 
-/****HEADER - FIRSTPAGE-CONTAINER****/
+
+/****HEADER STYLES****/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   --color2: #6a6f4c;
   background-color: #ede1d2;
 }
+
 
 /*Menu, navbar Global Style*/
 .nav-bar {
@@ -54,6 +56,9 @@ body {
 .menu li a:hover:after {
   width: 100%;
 }
+
+
+/*Menu ikon styles*/
 .open-menu,
 .close-menu {
   position: absolute;
@@ -65,7 +70,7 @@ body {
 .open-menu {
   top: 50%;
   right: 20px;
-  transform: translateY(-50%); 
+  transform: translateY(-50%);
 }
 .close-menu {
   top: 20px;
@@ -75,6 +80,7 @@ body {
   display: none;
 }
 
+
 .picture1fp {
   display: block;
   width: 700px;
@@ -82,7 +88,8 @@ body {
   margin-left: 22%;
 }
 
-/****FIRSTPAGE-MAIN-CONTAINER****/
+
+/****FIRSTPAGE-MAIN-CONTAINER styles****/
 h1 {
   text-align: center;
   font-family: Apple Chancery, cursive;
@@ -94,13 +101,15 @@ h1 {
   margin-bottom: 20px;
 }
 
-/*******LAST-CONTAINER******/
+
+/*******LAST-CONTAINER styles******/
 .row {
   display: flex;
   margin-inline: 2px;
   color: #806944;
   background-color: white;
 }
+
 
 .picture3fp {
   width: 90px;
@@ -111,10 +120,13 @@ h1 {
   height: 95px;
 }
 
+
 .picture5fp {
   margin-left: 21%;
   margin-top: 5px;
 }
+
+
 
 
 /******MAIN-FOOTER-CONTAINER - Global style*****/
@@ -122,7 +134,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: Apple Chancery, cursive;
-  background-color: #6a6f4c;
+  background-color:var(--color2);
   color: white;
   text-align: center;
   padding-top: 20px;
@@ -130,6 +142,7 @@ h1 {
   width: 80%;
   margin-left: 10%;
 }
+
 
 /******MEDIA QUEIRES- FIRSTPAGE*******/
 /* CSS style mobile, more style that changes when the screen gets smaller*/
@@ -167,6 +180,7 @@ h1 {
     margin-inline: 2px;
   }
 
+
   /*Firstpage-main-container*/
   .picture1fp {
     display: block;
@@ -174,6 +188,7 @@ h1 {
     height: 150px;
     margin-right: 22%;
   }
+
 
   .quotes {
     font-size: 12px;
@@ -190,6 +205,7 @@ h1 {
     overflow: hidden;
   }
 
+
   .picture4fp {
     width: 40px;
     height: 95px;
@@ -203,23 +219,23 @@ h1 {
 
   h1 {
     font-size: 20px;
-    
+   
     /*Global media queries style */
   }
   h2 {
     font-size: 18px;
   }
 
+
   p {
     font-size: 15px;
   }
-  
-
+ 
   .row {
     flex-direction: column;
   }
 }
-/*CSS style tablet and desktops, style changes when the screen gets bigger*/
+/*CSS style tablet (medium sized) and desktops, style changes when the screen gets bigger*/
 @media (min-width: 610px) and (max-width: 1024px) {
   /*Header, Firstpage-container*/
   .picture1fp {
@@ -236,3 +252,4 @@ h1 {
     margin-top: 5px;
   }
 }
+
