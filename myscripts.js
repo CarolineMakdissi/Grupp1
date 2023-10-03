@@ -1,5 +1,3 @@
-/*const showForm = () => {
-  document.getElementById("membercontainer").style.display = "block";
-  document.getElementById("membercontainer").scrollIntoView();
-};
-*/
+function myFunction() {
+  alert("The form was submitted");
+}
