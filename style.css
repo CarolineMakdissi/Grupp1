@@ -8,24 +8,18 @@ body{
     background-color: #EDE1D2;
 }
 .header{
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
+    background: transparent;
+    padding: 35px 15%;
 }
 .header-img{
-    width: 100px;
-    height: 200px;
+    width: 100%;
+    max-height: 200px;
+    display: block;
+    object-fit: cover;
 }
 .heading{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding-top: 20px;
     text-align: center;
-    margin: 20px auto;
-    position: relative;
-    z-index: 2;
 }
 .heading h1{
     font-size: 50px;
