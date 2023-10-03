@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <!--link to external javascript file, to be able to use some javascript code -->
     <script src="myscripts.js"></script>
+    <!-- Adding a favicon to the page -->
     <link rel="icon" type="image/x-icon" href="/img/bild1.webp" />
   </head>
   <nav></nav>
   <body>
-    <main>
+    <!-- Using the semantic element main to wrap the main content. Uses classes to style multiple elements and easily access specific HTML code lines in the CSS.-->
+    <main class="main">
       <div class="bgimg"></div>
       <div class="contact">
         <div class="img">
@@ -24,8 +27,9 @@
           Vårt Customer-team är redo att besvara alla dina frågor. Skicka oss
           ett mail, så återkommer vi till dig inom 24 timmar.
         </p>
-
-        <form class="form" onsubmit="myFunction()">
+        <!--calls javascript function to handle the form submit-->
+        <form class="form" onsubmit="handleSubmit()">
+          <!-- using required attribute to make sure that the input is filled in by the user -->
           <label
             >Förnamn: <input class="input" type="text" id="firstname" required
           /></label>
@@ -49,6 +53,12 @@
           </label>
           <input class="submit" type="submit" value="Submit" />
         </form>
+      </div>
+      <div class="">
+        <hr class="hr" />
+        <a href=""
+          ><p class="homepage">för att komma till startsidan klicka här</p></a
+        >
       </div>
     </main>
   </body>
