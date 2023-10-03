@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Defining viewport settings, helps with responsive layout-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Connect html and css file-->
+  <link rel="stylesheet" href="startsida.css" />
+  <!--Add font awesome to the menu-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+
+  <title>Rituals Eco Care org</title>
+</head>
+
+<!--Body - information to the user-->
+<body>
+  <!---HEADER,FIRSTPAGE CLASS-->
+    <header class="header"><!--Use html5 semantic tags, such as <header>, <footer>, <main> and <section> to improve accessibility, SEO and code readability -->
+      <!--Navbar- responsive hamburger menu-->
+      <nav>
+        <ul class="nav-bar">
+          <li class="logo">
+            <a href="#"><img src="./images/ikon.webp" alt="A picture of ritual logo" /></a>
+          </li>
+          <input type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="./startsida.html ">Startsida</a></li>
+            <li><a href="">Om oss</a></li>
+            <li><a href="./produktsida.html">Produktsida</a></li>
+            <li><a href="./contact.html">kontakt</a></li>
+            <li><a href="./member.html">Bli medlem</a></li>
+            <!---Using JavaScript, showing alert massage to let user know the button was clicked on instead of making a whole new page for cart, we already have alot of pages-->
+            <li><a class="fa-solid fa-cart-shopping fa-sm" style="color: #ffffff;" onclick="alert('Tack för ditt köp! Välkommen åter')"></a></li> 
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+      </nav>
+    </header>
+
+<!---FIRSTPAGE-MAIN-CONTAINER-->
+  <main class="firstpage-main-container">
+    <div class="main-section">
+      <img class="picture1fp" src="./images/green.jpg" alt="A picture of skincare" />
+      <h1>
+        Välkommen till <br />
+        Rituals Eco Care Org!
+      </h1>
+      <p class="quotes">
+        "Hudvård för varje del på kroppen, ta hand om din kropp med produkter
+        framgjorda med eco vänliga ämmnen.<br />
+        Här på Eco Care finns det garantier att du kommer att älska din hud
+        med gott samvete."
+      </p>
+    </div>
+
+  </main>
+
+  <!--LAST-CONTAINER--->
+  <section class="last-container">
+    <div class="products-section">
+      <div class="row">
+        <div class="col1" style="text-align:center" > <!--Style the columns in html element instead of reapeting style code in css file-->
+          <h2>Jing-serum</h2>
+          <p>
+            Rituals erbjuder Jing-serum för alla hudtyper med speciel ingrediens
+            av aloe vera kombinera gärna den med vår bodycream och jingdeo - besök gärna vår produktsida
+          </p>
+          <img class="picture2fp" src="./images/jingserum3.jpg" alt="A picture of serum" />
+        </div>
+
+        <div class="col2 " style="text-align:center">
+          <h2>Kroppskräm</h2>
+          <p>
+            I Rituals Eco Care har vi en underbar kroppskräm med lugnande
+            effekt - besök gärna vår produktsida
+          </p>
+          <img class="picture3fp" src="./images/bodycream.webp" alt="A picture of bodycream" />
+        </div>
+        <div class="col3" style="text-align: center;">
+          <h2>Jing-deo</h2>
+          <p>
+            Du kan även kombinera ihop med din Jing-serum och kroppskräm vår med
+            härliga Jing-deo, dofta likadant över hela kroppen - besök gärna vår produktsida
+          </p>
+          <img class="picture4fp" src="./images/deo3.jpg" alt="A picture of deo" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <img class="picture5fp" src="./images/greennature2.jpg" alt="A picture of a quote" />
+
+  <!---MAIN-FOOTER-CONTAINER-->
+  <div class="main-footer-container">
+    Copyright &copy; 2023, Rituals Eco Care Org<br />
+    Välkommen åter!
+  </div>
+  </footer>
+  </div>
+</body>
+
+</html>
