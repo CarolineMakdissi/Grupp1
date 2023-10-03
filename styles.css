@@ -1,0 +1,178 @@
+/*The code below is common code that applies to all screen sizes, further down I implement more specific code for different screen sizes.*/
+body {
+  margin: 0;
+  background-color: rgb(239, 235, 230);
+}
+/*In order to easily structure the code, I used flexbox throughout the code*/
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.bgcontainer {
+  width: 100%;
+  height: 60vh;
+  background-image: url(img/bild2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.bgimg {
+  width: 100%;
+  height: 30vh;
+  background-image: url(img/bild2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image {
+  display: block;
+  margin: auto;
+  width: 100px;
+}
+.contentcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6%;
+}
+.title {
+  background-color: rgba(122, 134, 120, 0.749);
+  margin-top: 15%;
+  font-size: 50px;
+  font-family: cursive;
+  color: beige;
+}
+.button {
+  cursor: pointer;
+  background-color: beige;
+  border-color: rgba(61, 61, 52, 0.749);
+  color: rgb(55, 50, 43);
+  min-height: 45px;
+  width: 200px;
+}
+.membership,
+.h1contact {
+  text-align: center;
+}
+
+.medbershipcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+  color: rgb(63, 57, 57);
+  font-family: cursive;
+}
+.h1contact {
+  color: rgb(63, 57, 57);
+  font-family: cursive;
+}
+.medbershipcontainer > p {
+  color: rgb(63, 57, 57);
+  width: 75%;
+}
+.contact > p {
+  margin: auto;
+  text-align: center;
+  padding: 3%;
+  font-size: 25px;
+  color: rgb(63, 57, 57);
+  font-family: cursive;
+  width: 75%;
+}
+
+.membercontainer > p {
+  text-align: center;
+  font-size: larger;
+}
+
+label,
+.input {
+  margin: auto;
+}
+
+.form,
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: medium;
+  min-width: 300px;
+}
+.contact > form {
+  padding-top: 3%;
+  background-color: rgba(70, 76, 68, 0.749);
+  width: 90%;
+  margin: auto;
+  color: beige;
+}
+.input {
+  width: 100%;
+  background-color: rgb(233, 233, 221);
+  border-color: rgba(76, 71, 66, 0.749);
+}
+
+.submit {
+  cursor: pointer;
+  margin: auto;
+  height: 2em;
+  width: 200px;
+  font-size: 1.1rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  min-width: 200px;
+  background-color: rgba(95, 141, 89, 0.749);
+  border-color: rgba(77, 74, 70, 0.749);
+}
+.membercontainer {
+  background-color: rgba(70, 76, 68, 0.749);
+  color: beige;
+  width: 90%;
+  margin: auto;
+}
+.hr {
+  width: 90%;
+  height: 2px;
+  background-color: rgba(46, 67, 43, 0.749);
+  border-color: rgba(77, 74, 70, 0.749);
+}
+.contactpage,
+.homepage {
+  text-align: center;
+}
+/* SMALL. here I apply more specific code for smaller devices and screens.*/
+@media screen and (min-width: 350px) and (max-width: 767px) {
+  .bgimg {
+    height: 20vh;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .h1contact,
+  h2 {
+    font-size: 25px;
+  }
+  .medbershipcontainer > p,
+  .contact > p {
+    font-size: 20px;
+    width: 90%;
+  }
+}
+/* MEDIUM. here I apply more specific code for medium devices and screens*/
+@media screen and (min-width: 768px) and (max-width: 1099px) {
+  .bgimg {
+    height: 25vh;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .h1contact,
+  h2 {
+    font-size: 30px;
+  }
+  .medbershipcontainer > p,
+  .contact > p {
+    font-size: 25px;
+    width: 90%;
+  }
+}

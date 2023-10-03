@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="myscripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="/img/bild1.webp" />
+  </head>
+  <nav></nav>
+  <body>
+    <main class="main">
+      <div class="bgcontainer">
+        <div class="contentcontainer">
+          <h1 class="title">Välkommen till Eco Care</h1>
+          <a href="#membership"
+            ><button class="button" type="button">BLI MEDLEM</button></a
+          >
+        </div>
+      </div>
+      <div class="membership">
+        <img class="image" src="img/bild1.webp" />
+        <div class="medbershipcontainer">
+          <h2>UPPLEV MENINGSFULLA STUNDER TILLSAMMANS</h2>
+          <hr class="hr" />
+          <p>
+            Varför ska man köpa ekologiskt? Genom att välja ekologiska
+            skönhetsprodukter väljer du att bidra till din egen hälsa och även
+            till en bättre miljö. Varje köp du gör berättigar till exklusiva
+            gåvor, fler medlemsförmåner, upplevelser och mer. Vi börjar med en
+            tackgåva andra gången du gör ett köp
+          </p>
+        </div>
+      </div>
+      <div class="membercontainer">
+        <p id="membership">För att bli medlem var god fyll i följande:</p>
+        <form class="form" onsubmit="handleSubmit()">
+          <label
+            >Förnamn:
+            <input class="input" type="text" id="memberfirstname" required
+          /></label>
+          <label
+            >Efternamn:
+            <input class="input" type="text" id="memberlastname" required />
+          </label>
+          <label>
+            E-mail:
+            <input class="input" type="email" id="memberemail" required
+          /></label>
+          <label>
+            Skapa ny lösenord:
+            <input class="input" id="new-password" type="password" required
+          /></label>
+          <input class="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+      <div>
+        <hr class="hr" />
+        <a href="/contact.html"
+          ><p class="contactpage">För att kontakta oss klicka här</p></a
+        >
+      </div>
+    </main>
+  </body>
+</html>
