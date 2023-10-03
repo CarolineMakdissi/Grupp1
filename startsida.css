@@ -1,5 +1,5 @@
 
-/****HEADER - FIRSTPAGE CONTAINER****/
+/****HEADER - FIRSTPAGE-CONTAINER****/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +12,7 @@ body {
   background-color: #ede1d2;
 }
 
-/*Menu*/
+/*Menu, navbar Global Style*/
 .nav-bar {
   width: 100%;
   display: flex;
@@ -82,7 +82,7 @@ body {
   margin-left: 22%;
 }
 
-/*Firstpage-main-container*/
+/****FIRSTPAGE-MAIN-CONTAINER****/
 h1 {
   text-align: center;
   font-family: Apple Chancery, cursive;
@@ -93,6 +93,7 @@ h1 {
   margin-bottom: 20px;
 }
 
+/*LAST-CONTAINER*/
 .row {
   display: flex;
   margin-inline: 2px;
@@ -104,12 +105,19 @@ h1 {
   width: 90px;
   height: 90px;
 }
+.picture4fp {
+  width: 40px;
+  height: 95px;
+}
 
 .picture5fp {
   margin-left: 21%;
   margin-top: 5px;
 }
-.stylefooter {
+
+
+/* MAIN-FOOTER-CONTAINER - Global style*/
+.main-footer-container {
   font-family: Apple Chancery, cursive;
   background-color: #6a6f4c;
   color: white;
@@ -155,6 +163,7 @@ h1 {
     flex-direction: row;
     margin-inline: 2px;
   }
+
   /*Firstpage-main-container*/
   .picture1fp {
     display: block;
@@ -162,7 +171,11 @@ h1 {
     height: 150px;
     margin-right: 22%;
   }
-
+  
+  .quotes {
+    font-size: 12px;
+  }
+  /*Last-container*/
   .picture2fp {
     width: 60px;
     height: 60px;
@@ -197,9 +210,7 @@ h1 {
   p {
     font-size: 15px;
   }
-  .quotes {
-    font-size: 12px;
-  }
+  
 
   .row {
     flex-direction: column;
@@ -207,12 +218,14 @@ h1 {
 }
 /*CSS style tablet and desktops, style changes when the screen gets bigger*/
 @media (min-width: 610px) and (max-width: 1024px) {
+  /*Header, Firstpage-container*/
   .picture1fp {
     display: block;
     width: 500px;
     height: 350px;
     margin-left: 20%;
   }
+  /*Last-container*/
   .picture5fp {
     width: 500px;
     height: 200px;

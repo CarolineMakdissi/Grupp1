@@ -18,9 +18,9 @@
 
 <!--Body - information to the user-->
 <body>
-  <!---HEADER-->
+  <!---HEADER,FIRSTPAGE-CONTAINER-->
   <div class="firstpage-container">
-    <header class="header">
+    <header class="header"><!--Use html5 semantic tags, such as <header>, <footer>, <main> and <section> to improve accessibility, SEO and code readability -->
       <!--Navbar- responsive hamburger menu-->
       <nav>
         <ul class="nav-bar">
@@ -44,6 +44,7 @@
     </header>
   </div>
 
+<!---FIRSTPAGE-MAIN-CONTAINER-->
   <main class="firstpage-main-container">
     <div class="main-section">
       <img class="picture1fp" src="./images/green.jpg" alt="A picture of skincare" />
@@ -60,19 +61,21 @@
     </div>
 
   </main>
+
+  <!--LAST-CONTAINER--->
   <section class="last-container">
     <div class="products-section">
       <div class="row">
-        <div class="col1">
+        <div class="col1" style="text-align: center;"> <!--Style the columns in html element instead of reapeting style code in css file-->
           <h2>Jing-serum</h2>
           <p>
-            Rituals erbjuder jingserum för alla hudtyper med speciel ingrediens
-            av aloe vera Kombinera gärna den med vår bodycream och jingdeo - besök gärna vår produktsida
+            Rituals erbjuder Jing-serum för alla hudtyper med speciel ingrediens
+            av aloe vera kombinera gärna den med vår bodycream och jingdeo - besök gärna vår produktsida
           </p>
           <img class="picture2fp" src="./images/jingserum3.jpg" alt="A picture of serum" />
         </div>
 
-        <div class="col2">
+        <div class="col2" style="text-align: center;">
           <h2>Kroppskräm</h2>
           <p>
             I Rituals Eco Care har vi en underbar kroppskräm med lugnande
@@ -80,11 +83,11 @@
           </p>
           <img class="picture3fp" src="./images/bodycream.webp" alt="A picture of bodycream" />
         </div>
-        <div class="col3">
+        <div class="col3" style="text-align: center;">
           <h2>Jing-deo</h2>
           <p>
-            Du kan även kombinera ihop med din Jingserum och Bodycream vår med
-            härliga jingdeo, dofta likadant över hela kroppen - besök gärna vår produktsida
+            Du kan även kombinera ihop med din Jing-serum och kroppskräm vår med
+            härliga Jing-deo, dofta likadant över hela kroppen - besök gärna vår produktsida
           </p>
           <img class="picture4fp" src="./images/deo3.jpg" alt="A picture of deo" />
         </div>
@@ -93,7 +96,8 @@
   </section>
   <img class="picture5fp" src="./images/greennature2.jpg" alt="A picture of a quote" />
 
-  <div class="footer-container stylefooter">
+  <!---MAIN-FOOTER-CONTAINER-->
+  <div class="main-footer-container">
     Copyright &copy; 2023, Rituals Eco Care Org<br />
     Välkommen åter!
   </div>
