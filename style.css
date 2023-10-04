@@ -7,14 +7,6 @@
 body{
     background-color: #EDE1D2;   
 }
-.header-image{
-    background: url(Bilder/header2.jpeg);
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 6rem 0;
-    height: 300px;
-}
 .heading{
     width: 90%;
     display: flex;
@@ -63,7 +55,7 @@ body{
 }
  .about-image img {
     width: 490px;
-    height: 340px;
+    height: 380px;
     display: block;
     transition: 0.5s ease;
 }
@@ -122,6 +114,47 @@ body{
    align-items: center;
    margin: auto;
 }
+.page2-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #EDE1D2;
+}
+.page2-header h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+.page2-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+.page2-card{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.page2-card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+}
+.page2-card img{
+    width: 100%;
+    height: auto;
+}
+.page2-card h4{
+    text-align: center;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+.page2-card p{
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
 @media screen and (max-width: 768px){
     .heading{
         padding: 0px 20px;
