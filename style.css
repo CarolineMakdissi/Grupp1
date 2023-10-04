@@ -5,8 +5,16 @@
     font-family: 'Lato', sans-serif;
 }
 body{
-    background-color: #EDE1D2;
+    background-color: #EDE1D2;   
 }
+.header-image{
+    background: url(Bilder/header2.jpeg);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 0;
+}
+
 .heading{
     width: 90%;
     display: flex;
@@ -54,7 +62,7 @@ body{
     overflow: hidden;
 }
  .about-image img {
-    width: 480px;
+    width: 490px;
     height: 340px;
     display: block;
     transition: 0.5s ease;
@@ -101,7 +109,19 @@ body{
     text-align: center;
     margin: auto;
 }
-
+.container-2 .row .header h1{
+    font-size: 50px;
+    color-scheme: #000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    position: relative;  
+}
+.content{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
 @media screen and (max-width: 768px){
     .heading{
         padding: 0px 20px;
