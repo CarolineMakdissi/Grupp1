@@ -1,5 +1,3 @@
-
-
 /****HEADER STYLES****/
 * {
   box-sizing: border-box;
@@ -12,7 +10,6 @@ body {
   --color2: #6a6f4c;
   background-color: #ede1d2;
 }
-
 
 /*Menu, navbar Global Style*/
 .nav-bar {
@@ -33,6 +30,7 @@ body {
 }
 .menu li {
   padding-left: 30px;
+  display: block;
 }
 .menu li a {
   display: inline-block;
@@ -57,7 +55,6 @@ body {
   width: 100%;
 }
 
-
 /*Menu ikon styles*/
 .open-menu,
 .close-menu {
@@ -80,7 +77,6 @@ body {
   display: none;
 }
 
-
 .picture1fp {
   display: block;
   width: 700px;
@@ -88,19 +84,45 @@ body {
   margin-left: 22%;
 }
 
-
 /****FIRSTPAGE-MAIN-CONTAINER styles****/
 h1 {
   text-align: center;
   font-family: Apple Chancery, cursive;
   text-shadow: 2px 2px 4px grey; /*Adding shadow behind the text*/
+  font-size: 42px;
 }
 .quotes {
   text-align: center;
   font-family: Apple Chancery, cursive;
-  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 18px;
 }
 
+.firstpage-main-container {
+  background: url("./images/green.jpg");
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.main-section {
+  position: inherit;
+  padding: 20px;
+  color: #fff;
+  z-index: 1;
+}
+.main-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
 
 /*******LAST-CONTAINER styles******/
 .row {
@@ -108,8 +130,8 @@ h1 {
   margin-inline: 2px;
   color: #806944;
   background-color: white;
+  padding: 30px 20px;
 }
-
 
 .picture3fp {
   width: 90px;
@@ -120,34 +142,27 @@ h1 {
   height: 95px;
 }
 
-
 .picture5fp {
-  margin-left: 21%;
-  margin-top: 5px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
-
-
-
 
 /******MAIN-FOOTER-CONTAINER - Global style*****/
 .main-footer-container {
   display: flex;
   justify-content: center;
   font-family: Apple Chancery, cursive;
-  background-color:var(--color2);
+  background-color: var(--color2);
   color: white;
   text-align: center;
   padding-top: 20px;
   height: 100px;
-  width: 80%;
-  margin-left: 10%;
 }
 
-
-/******MEDIA QUEIRES- FIRSTPAGE*******/
-/* CSS style mobile, more style that changes when the screen gets smaller*/
-@media (max-width:610px)  {
-  /*Firstpage-container, header*/
+/* Trigger hamburger menu*/
+@media (max-width: 910px) {
   .menu {
     flex-direction: column;
     align-items: center;
@@ -174,24 +189,31 @@ h1 {
   #check:checked ~ .menu {
     right: 0;
   }
+}
+
+/******MEDIA QUEIRES- FIRSTPAGE*******/
+/* CSS style mobile, more style that changes when the screen gets smaller*/
+@media (max-width: 610px) {
+  /*Firstpage-container, header*/
+  .firstpage-main-container {
+    min-height: auto;
+    padding: 20px 10px;
+  }
+
   .row {
     display: flex;
     flex-direction: row;
     margin-inline: 2px;
   }
 
-
   /*Firstpage-main-container*/
   .picture1fp {
-    display: block;
     width: 200px;
     height: 150px;
-    margin-right: 22%;
   }
 
-
   .quotes {
-    font-size: 12px;
+    font-size: 16px;
   }
   /*Last-container*/
   .picture2fp {
@@ -205,32 +227,24 @@ h1 {
     overflow: hidden;
   }
 
-
   .picture4fp {
     width: 40px;
     height: 95px;
   }
-  .picture5fp {
-    width: 300px;
-    height: 150px;
-    margin-left: 10%;
-    margin-top: 5px;
-  }
 
   h1 {
-    font-size: 20px;
-   
+    font-size: 26px;
+
     /*Global media queries style */
   }
   h2 {
     font-size: 18px;
   }
 
-
   p {
     font-size: 15px;
   }
- 
+
   .row {
     flex-direction: column;
   }
@@ -239,17 +253,8 @@ h1 {
 @media (min-width: 610px) and (max-width: 1024px) {
   /*Header, Firstpage-container*/
   .picture1fp {
-    display: block;
     width: 500px;
     height: 350px;
     margin-left: 20%;
   }
-  /*Last-container*/
-  .picture5fp {
-    width: 500px;
-    height: 200px;
-    margin-left: 20%;
-    margin-top: 5px;
-  }
 }
-
