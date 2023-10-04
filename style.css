@@ -89,6 +89,19 @@ body{
 .about-content .read-more:hover{
     background-color: #6a6f4c;
 }
+.container-2{
+    width: 100%;
+}
+.container-2 .row{
+    width: 80%;
+    margin:auto;
+}
+.container-2 .row .header{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
 @media screen and (max-width: 768px){
     .heading{
         padding: 0px 20px;
