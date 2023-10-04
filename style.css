@@ -186,4 +186,28 @@ body{
         font-size: 16px;
     }
 }
+@media screen and (max-width: 480px){
+    .heading h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .heading p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .about-image img{
+        width: 100%;
+    }
+    .page2-card h4{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .page2-card p{
+        padding: 0 10px 10px;
+        font-size: 15px;
+    }
+}
+    
+
 
