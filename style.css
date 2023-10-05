@@ -2,30 +2,25 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: Apple Chancery , cursive;
 }
 body{
-    background-color: #EDE1D2;
-}
-.header{
-    background: transparent;
-    padding: 35px 15%;
-}
-.header-img{
-    width: 100%;
-    max-height: 200px;
-    display: block;
-    object-fit: cover;
+    background-color: #EDE1D2;   
 }
 .heading{
-    padding-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    margin: 20px auto;
 }
 .heading h1{
     font-size: 50px;
-    color-scheme: #000;
+    color: #000;
     margin-bottom: 25px;
-    margin-top: 20px;
+    margin-top: 25px;
     position: relative;
 }
 .heading h1::after{
@@ -46,14 +41,12 @@ body{
     width: 90%;
     margin: 0 auto;
     padding: 10px 20px;
-    display: flex;
 }
 .about{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;  
-    margin-top: -50px; 
 }
 .about-image {
     flex: 1;
@@ -61,11 +54,17 @@ body{
     overflow: hidden;
 }
  .about-image img {
-    width: 207px;
-    height: 370px;
+    width: 460px;
+    height: 380px;
+    display: block;
     transition: 0.5s ease;
-    }
-
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+}
 .about-content h2{
     font-size: 23px;
     margin-bottom: 15px;
@@ -90,7 +89,72 @@ body{
 .about-content .read-more:hover{
     background-color: #6a6f4c;
 }
-"
+.container-2{
+    width: 100%;
+}
+.container-2 .row{
+    width: 80%;
+    margin:auto;
+}
+.container-2 .row .header{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.container-2 .row .header h1{
+    font-size: 50px;
+    color-scheme: #000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    position: relative;  
+}
+.content{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.page2-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #EDE1D2;
+}
+.page2-header h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+.page2-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+.page2-card{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.page2-card:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+}
+.page2-card img{
+    width: 100%;
+    height: auto;
+}
+.page2-card h4{
+    text-align: center;
+    margin: 20px 0;
+    color: #2c3e50;
+}
+.page2-card p{
+    padding: 0 20px 20px;
+    line-height: 1.5;
+}
+
 @media screen and (max-width: 768px){
     .heading{
         padding: 0px 20px;
@@ -106,6 +170,10 @@ body{
         padding: 20px;
         flex-direction: column;
     }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
     .about-image{
         margin-right: 0px;
         margin-bottom: 20px;
@@ -118,4 +186,28 @@ body{
         font-size: 16px;
     }
 }
+@media screen and (max-width: 480px){
+    .heading h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    .heading p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .about-image img{
+        width: 100%;
+    }
+    .page2-card h4{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    .page2-card p{
+        padding: 0 10px 10px;
+        font-size: 15px;
+    }
+}
+    
+
 
