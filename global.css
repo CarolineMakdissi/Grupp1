@@ -83,7 +83,7 @@ body {
   }
  
  /*Tablets*/
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 910px) {
     /* Trigger hamburger menu*/
   .menu {
     flex-direction: column;
