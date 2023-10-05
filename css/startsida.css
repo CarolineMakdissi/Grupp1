@@ -22,7 +22,7 @@ h1 {
 }
 
 .firstpage-main-container {
-  background: url("./img/green.jpg");
+  background: url("../img/green.jpg");
   background-size: cover;
   position: relative;
   min-height: 500px;
