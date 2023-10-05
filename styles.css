@@ -8,11 +8,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  overflow: hidden;
 }
 .bgcontainer {
   width: 100%;
   height: 60vh;
-  background-image: url(img/bild2.jpg);
+  background-image: url(img/header.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -20,7 +21,7 @@ body {
 .bgimg {
   width: 100%;
   height: 30vh;
-  background-image: url(img/bild2.jpg);
+  background-image: url(img/header.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -39,7 +40,7 @@ body {
   background-color: rgba(122, 134, 120, 0.749);
   margin-top: 15%;
   font-size: 50px;
-  font-family: cursive;
+  font-family: Apple Chancery, cursive;
   color: beige;
 }
 .button {
@@ -61,11 +62,11 @@ body {
   align-items: center;
   font-size: x-large;
   color: rgb(63, 57, 57);
-  font-family: cursive;
+  font-family: Apple Chancery, cursive;
 }
 .h1contact {
   color: rgb(63, 57, 57);
-  font-family: cursive;
+  font-family: Apple Chancery, cursive;
 }
 .medbershipcontainer > p {
   color: rgb(63, 57, 57);
@@ -77,7 +78,7 @@ body {
   padding: 3%;
   font-size: 25px;
   color: rgb(63, 57, 57);
-  font-family: cursive;
+  font-family: Apple Chancery, cursive;
   width: 75%;
 }
 
