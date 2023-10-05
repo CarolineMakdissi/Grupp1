@@ -1,15 +1,4 @@
 /****HEADER STYLES****/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: Apple Chancery, cursive;
-  --color1: White; /* Use --color to find the colour easy*/
-  --color2: #6a6f4c;
-  background-color: #ede1d2;
-}
 
 .picture1fp {
   display: block;
