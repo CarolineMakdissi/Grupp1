@@ -1,0 +1,199 @@
+/*Desktop*/
+@media screen and (max-width: 1920px) {
+  header {
+    height: 40vh;
+  }
+  #intro {
+    font-size: 1.2rem;
+  }
+  #logo {
+    width: 10%;
+  }
+  .titleWrap {
+    width: 40%;
+    background-color: #ffffffb0;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  #main {
+    overflow: hidden;
+    background-color: #ede1d2;
+  }
+  #produkter {
+    display: grid;
+    width: fit-content;
+    height: 900x;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 450px);
+    row-gap: 2vh;
+    column-gap: 2vh;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+  }
+  .bild {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    background-image: url(bilder/silk.avif);
+    background-size: cover;
+    background-position: right;
+  }
+  .desc {
+    font-weight: 300 !important;
+    font-size: 1.2rem !important;
+  }
+  .produkt {
+    width: 90%;
+    overflow: hidden;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .pris {
+    font-weight: light;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .produktInfo {
+    background-color: rgb(255, 255, 255);
+    font-family: "Crimson Text", serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #jingBild {
+    height: 42vh;
+    float: left;
+  }
+  #jingInfo {
+    height: 42vh;
+    width: 60%;
+    background-color: white;
+  }
+  #jingText {
+    padding: 2vh;
+    width: 40%;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  /*Tablets*/
+  @media screen and (max-width: 900px) {
+    #intro {
+      padding-left: 2vh;
+      padding-right: 2vh;
+    }
+    .produkt {
+      width: 100%;
+    }
+    #produkter {
+      column-gap: 2vh;
+      row-gap: 2vh;
+      grid-template-rows: repeat(3, 45vh);
+      grid-template-columns: repeat(2, 46%);
+    }
+    #jingBild {
+      width: 100%;
+      height: 30vh;
+      float: none;
+    }
+    #jingInfo {
+      height: fit-content;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4vh;
+    }
+    #jingText {
+      padding: 1vh;
+      margin-top: 2vh;
+      position: relative;
+      width: 100%;
+    }
+
+    /*Mobiler*/
+    @media screen and (max-width: 600px) {
+      .titleWrap {
+        width: fit-content;
+        color: #1b1b1b;
+      }
+      #produkter {
+        display: grid;
+        column-gap: 1.5vh;
+        row-gap: 1.5vh;
+        grid-template-areas:
+          "a b"
+          "c d";
+      }
+      .produkt {
+        width: 100%;
+      }
+      .bild {
+        width: 100%;
+        height: 70%;
+      }
+      #produkt-1 {
+        grid-area: a;
+        overflow: hidden;
+        width: 100%;
+      }
+      #produkt-2 {
+        grid-area: b;
+        overflow: hidden;
+        width: 100%;
+      }
+      #produkt-3 {
+        grid-area: c;
+        overflow: hidden;
+        width: 100%;
+      }
+      #produkt-4 {
+        grid-area: d;
+        overflow: hidden;
+        width: 100%;
+      }
+      * {
+        border: red 0px solid;
+      }
+      .br {
+        display: block;
+      }
+      .desc {
+        font-weight: 200;
+        font-size: 0.8rem;
+      }
+      #jingBild {
+        width: 100%;
+        height: 25vh;
+      }
+    }
+  }
+}
+header {
+  background-image: url(bilder/headerBG.jpg);
+}
+p {
+  font-family: "Work Sans", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Apple Chancery", sans-serif;
+  margin-bottom: 0 !important;
+}
+h1 {
+  text-shadow: rgba(175, 138, 121, 0.537) 2px 5px;
+}
+h2 {
+  margin-top: 1vh !important;
+}
+#footer {
+  width: 100%;
+  height: 40vh;
+  background-color: chartreuse;
+}
+body {
+  background-color: #ede1d2 !important;
+}
