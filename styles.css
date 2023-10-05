@@ -87,13 +87,13 @@ body {
   font-size: larger;
 }
 
-label,
+.label,
 .input {
   margin: auto;
 }
 
 .form,
-label {
+.label {
   display: flex;
   flex-direction: column;
   gap: 10px;
