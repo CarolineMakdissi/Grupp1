@@ -95,10 +95,6 @@ h1 {
   height: 100px;
 }
 
-/* Trigger hamburger menu*/
-@media (max-width: 910px) {
-  
-}
 /******MEDIA QUEIRES- FIRSTPAGE*******/
 /* CSS style mobile, more style that changes when the screen gets smaller*/
 @media (max-width: 610px) {
