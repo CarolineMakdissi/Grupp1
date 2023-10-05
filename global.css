@@ -1,4 +1,15 @@
  /*Menu, navbar Global Style*/
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Apple Chancery, cursive;
+  --color1: White; /* Use --color to find the colour easy*/
+  --color2: #6a6f4c;
+  background-color: #ede1d2;
+}
  .nav-bar {
     width: 100%;
     display: flex;
@@ -16,6 +27,8 @@
   }
   .menu {
     display: flex;
+    margin:0;
+    padding:0;
   }
   .menu li {
     padding-left: 30px;
