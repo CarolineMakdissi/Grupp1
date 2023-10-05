@@ -32,6 +32,7 @@ body {
 }
 .contentcontainer {
   display: flex;
+  gap: 16px;
   flex-direction: column;
   justify-content: center;
   padding: 6%;
@@ -50,6 +51,9 @@ body {
   color: rgb(55, 50, 43);
   min-height: 45px;
   width: 200px;
+}
+#membership {
+  margin-top: 16px;
 }
 .membership,
 .h1contact {
@@ -72,6 +76,7 @@ body {
   color: rgb(63, 57, 57);
   width: 75%;
 }
+.membershipcontainer > p,
 .contact > p {
   margin: auto;
   text-align: center;
@@ -133,6 +138,7 @@ body {
 }
 .hr {
   width: 90%;
+  margin: auto;
   height: 2px;
   background-color: rgba(46, 67, 43, 0.749);
   border-color: rgba(77, 74, 70, 0.749);
@@ -153,7 +159,7 @@ body {
   h2 {
     font-size: 25px;
   }
-  .medbershipcontainer > p,
+  .membershipcontainer > p,
   .contact > p {
     font-size: 20px;
     width: 90%;
