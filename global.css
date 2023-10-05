@@ -1,4 +1,3 @@
-
  /*Menu, navbar Global Style*/
  .nav-bar {
     width: 100%;
@@ -72,6 +71,7 @@
     height: 500px;
     margin-left: 22%;
   }
+  /* Nav end*/
 body {
     --color1: White; /* Use --color to find the colour easy*/
     --color2: #6a6f4c;
