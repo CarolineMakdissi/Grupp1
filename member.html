@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bli medlem</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="global.css" />
     <script src="myscripts.js"></script>
@@ -23,36 +23,41 @@
   </head>
   <body>
     <main class="main">
-      <!--Navbar-->
-      <nav class="nav-bar">
-        <div class="logo">
-          <a href="#"
-            ><img src="img/ikon.webp" alt="A picture of ritual logo"
-          /></a>
-        </div>
-        <input type="checkbox" id="check" />
-        <ul class="menu">
-          <li><a href="startsida.html">Startsida</a></li>
-          <li><a href="index.html">Om oss</a></li>
-          <li><a href="produktsida.html">Produktsida</a></li>
-          <li><a href="contact.html">kontakt</a></li>
-          <li><a href="member.html">Bli medlem</a></li>
-          <!---Using JavaScript, showing alert massage to let user know the button was clicked on instead of making a whole new page for cart, we already have alot of pages-->
-          <li>
-            <a
-              class="fa-solid fa-cart-shopping fa-sm"
-              style="color: #ffffff"
-              onclick="alert('Tack för ditt köp! Välkommen åter')"
-            ></a>
-          </li>
-          <li>
-            <label for="check" class="close-menu"
-              ><i class="fas fa-times"></i
-            ></label>
-          </li>
-        </ul>
-        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-      </nav>
+      <header class="header">
+        <!--Use html5 semantic tags, such as <header>, <footer>, <main> and <section> to improve accessibility, SEO and code readability -->
+        <!--Navbar- responsive hamburger menu ikon-->
+        <nav class="nav-bar">
+          <div class="logo">
+            <a href="./startsida.html"
+              ><img src="./img/ikon.webp" alt="A picture of ritual logo"
+            /></a>
+          </div>
+          <input type="checkbox" id="check" />
+          <ul class="menu">
+            <li><a href="./startsida.html ">Startsida</a></li>
+            <li><a href="./Om oss.html">Om oss</a></li>
+            <li><a href="./produktsida.html">Produktsida</a></li>
+            <li><a href="./contact.html">kontakt</a></li>
+            <li><a href="./member.html">Bli medlem</a></li>
+            <!---Using JavaScript, showing alert massage to let user know the button was clicked on instead of making a whole new page for cart, we already have alot of pages-->
+            <li>
+              <a
+                class="fa-solid fa-cart-shopping fa-sm"
+                style="color: #ffffff"
+                onclick="alert('Tack för ditt köp! Välkommen åter')"
+              ></a>
+            </li>
+            <li>
+              <label for="check" class="close-menu"
+                ><i class="fas fa-times"></i
+              ></label>
+            </li>
+          </ul>
+          <label for="check" class="open-menu"
+            ><i class="fas fa-bars"></i
+          ></label>
+        </nav>
+      </header>
       <div class="bgcontainer">
         <div class="contentcontainer">
           <h1 class="title">Välkommen till Eco Care</h1>
