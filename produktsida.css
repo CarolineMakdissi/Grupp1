@@ -137,11 +137,11 @@
     overflow: hidden;
   }
   #jingBild {
-    height: 42vh;
+    height: 50vh;
     float: left;
   }
   #jingInfo {
-    height: 42vh;
+    height: 50vh;
     width: 60%;
     background-color: white;
   }
