@@ -24,36 +24,38 @@
     <title>Rituals Eco care org-Om Oss</title>
   </head>
   <body>
-    <!--Navbar-->
-    <nav class="nav-bar">
-      <div class="logo">
-        <a href="./startsida.html"
-          ><img src="img/ikon.webp" alt="A picture of ritual logo"
-        /></a>
-      </div>
-      <input type="checkbox" id="check" />
-      <ul class="menu">
-        <li><a href="startsida.html">Startsida</a></li>
-        <li><a href="om-oss.html">Om oss</a></li>
-        <li><a href="produktsida.html">Produktsida</a></li>
-        <li><a href="contact.html">kontakt</a></li>
-        <li><a href="member.html">Bli medlem</a></li>
-        <!---Using JavaScript, showing alert massage to let user know the button was clicked on instead of    making a whole new page for cart, we already have alot of pages-->
-        <li>
-          <a
-            class="fa-solid fa-cart-shopping fa-sm"
-            style="color: hsl(0, 0%, 100%)"
-            onclick="alert('Webbshoppen är för tillfället avstängd, använd kontaktsidan för dina beställningar')"
-          ></a>
-        </li>
-        <li>
-          <label for="check" class="close-menu"
-            ><i class="fas fa-times"></i
-          ></label>
-        </li>
-      </ul>
-      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-    </nav>
+    <header class="header">
+      <!--Use html5 semantic tags, such as <header>, <footer>, <main> and <section> to improve accessibility, SEO and code readability -->
+      <!--Navbar- responsive hamburger menu ikon-->
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="./startsida.html"
+            ><img src="./img/ikon.webp" alt="A picture of ritual logo"
+          /></a>
+        </div>
+        <input type="checkbox" id="check" />
+        <ul class="menu">
+          <li><a href="./startsida.html">Startsida</a></li>
+          <li><a href="./Om-oss.html">Om oss</a></li>
+          <li><a href="./produktsida.html">Produktsida</a></li>
+          <li><a href="./contact.html">kontakt</a></li>
+          <li><a href="./member.html">Bli medlem</a></li>
+          <!---Using JavaScript, showing alert massage to let user know the button was clicked on instead of making a whole new page for cart, we already have alot of pages-->
+          <li>
+            <a
+              class="fa-solid fa-cart-shopping fa-sm"
+              onclick="alert('Webbshoppen är för tillfället avstängd, använd kontaktsidan för dina beställningar')"
+            ></a>
+          </li>
+          <li>
+            <label for="check" class="close-menu"
+              ><i class="fas fa-times"></i
+            ></label>
+          </li>
+        </ul>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </nav>
+    </header>
     <!--header section of the first page-->
     <div class="heading">
       <h1>Om Oss</h1>
