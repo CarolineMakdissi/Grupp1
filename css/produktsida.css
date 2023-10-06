@@ -67,6 +67,12 @@
     height: 100%;
     overflow: hidden;
   }
+  .product-section-intro {
+    background-color: #ede1d2;
+  }
+  .hero-paragraph {
+    font-size: 1.2rem;
+  }
   #jingBild {
     height: 50vh;
     float: left;
