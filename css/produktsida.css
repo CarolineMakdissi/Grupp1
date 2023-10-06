@@ -23,7 +23,7 @@
   #produkter {
     display: grid;
     width: fit-content;
-    height: 900x;
+    height: fit-content;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(2, 450px);
     row-gap: 2vh;
@@ -52,7 +52,7 @@
     padding-right: 0 !important;
   }
   .pris {
-    font-weight: light;
+    font-weight: 200;
     font-family: "Work Sans", sans-serif;
     font-size: 1rem;
   }
