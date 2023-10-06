@@ -56,6 +56,10 @@
     font-family: "Work Sans", sans-serif;
     font-size: 1rem;
   }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
   .produktInfo {
     background-color: rgb(255, 255, 255);
     font-family: "Crimson Text", serif;
@@ -76,10 +80,6 @@
     padding: 2vh;
     width: 30%;
   }
-  p {
-    font-size: 1rem;
-    font-weight: 400;
-  }
   /*Tablets*/
   @media screen and (max-width: 900px) {
     #intro {
@@ -89,6 +89,7 @@
     .produkt {
       width: 100%;
     }
+    /*Grid has two columns to better fit the screen*/
     #produkter {
       column-gap: 2vh;
       row-gap: 2vh;
@@ -113,72 +114,76 @@
       position: relative;
       width: 100%;
     }
-    .col-8{
+    .col-8 {
       width: 50% !important;
     }
   }
 
-    /*Mobiler*/
-    @media screen and (max-width: 600px) {
-      .titleWrap {
-        width: fit-content;
-        color: #1b1b1b;
-      }
-      #produkter {
-        row-gap: 1.5vh;
-        width: 80%;
-        grid-template-rows: repeat(6, 45vh);
-        grid-template-columns:  100%;
-        grid-template-areas: "a"
-                            "b"
-                            "c"
-                            "d"
-                            "e"
-                            "f";
-      }
-      .produkt {
-        width: 100%;
-      }
-      .bild {
-        width: 100%;
-        height: 70%;
-      }
-      #produkt-1 {
-        grid-area: a;
-        overflow: hidden;
-        width: 100%;
-      }
-      #produkt-2 {
-        grid-area: b;
-        overflow: hidden;
-        width: 100%;
-      }
-      #produkt-3 {
-        grid-area: c;
-        overflow: hidden;
-        width: 100%;
-      }
-      #produkt-4 {
-        grid-area: d;
-        overflow: hidden;
-        width: 100%;
-      }
-      .br {
-        display: block;
-      }
-      .desc {
-        font-weight: 200;
-        font-size: 0.8rem;
-      }
-      #jingBild {
-        width: 100%;
-        height: 25vh;
-      }
-      .col-8{
-        width: 80% !important;
-      }
+  /*Mobiler*/
+  @media screen and (max-width: 600px) {
+    .titleWrap {
+      width: fit-content;
+      color: #1b1b1b;
+    }
+    /*Grid has one column to better fit the screen*/
+
+    #produkter {
+      row-gap: 1.5vh;
+      width: 80%;
+      grid-template-rows: repeat(6, 45vh);
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f";
+    }
+    .produkt {
+      width: 100%;
+    }
+    .bild {
+      width: 100%;
+      height: 70%;
+    }
+    #produkt-1 {
+      grid-area: a;
+      overflow: hidden;
+      width: 100%;
+    }
+    #produkt-2 {
+      grid-area: b;
+      overflow: hidden;
+      width: 100%;
+    }
+    #produkt-3 {
+      grid-area: c;
+      overflow: hidden;
+      width: 100%;
+    }
+    #produkt-4 {
+      grid-area: d;
+      overflow: hidden;
+      width: 100%;
+    }
+    .br {
+      display: block;
+    }
+    .desc {
+      font-weight: 200;
+      font-size: 0.8rem;
+    }
+    #jingBild {
+      width: 100%;
+      height: 25vh;
+    }
+    .col-8 {
+      width: 80% !important;
     }
   }
+  /*Local styling*/
+}
 header {
   background-image: url(../img/header.jpeg);
 }
